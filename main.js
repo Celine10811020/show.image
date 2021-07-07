@@ -18,7 +18,7 @@ function setup()
 function showImage()
 {
   i = inputValue.value();
-  img[i] = createImg("images/"+ i +".png");
+  img[i] = createImg(i +".png");
 
   closeButton[i] = createButton("X", i);
   closeButton[i].mouseClicked(closeImage);
