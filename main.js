@@ -13,12 +13,10 @@ function setup()
   createP("");
 }
 
-
-
 function showImage()
 {
   i = inputValue.value();
-  img[i] = createImg(i +".png");
+  img[i] = createImg("https://raw.githubusercontent.com/Celine10811020/show.image/main/"+ i +".png");
 
   closeButton[i] = createButton("X", i);
   closeButton[i].mouseClicked(closeImage);
